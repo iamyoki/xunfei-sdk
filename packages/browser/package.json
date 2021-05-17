@@ -1,0 +1,44 @@
+{
+  "name": "@xunfei-sdk/browser",
+  "version": "0.0.0",
+  "description": "A third party SDK for xunfei.",
+  "keywords": [
+    "xunfei",
+    "讯飞",
+    "audio"
+  ],
+  "author": "Yoki Yu <yokiyuqian@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.esm.js",
+  "browser": "dist/bundle.browser.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@types/dom-mediacapture-record": "^1.0.7",
+    "rollup": "^2.48.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-lib": "^0.0.5",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.0.1",
+    "crypto-js": "^4.0.0"
+  }
+}
